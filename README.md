@@ -1,5 +1,5 @@
 [Update]
-I have only updated the docker portion of the project. The original project used a Ubuntu Xenial image, but the build failed for the current bitcoin core release because xenial does not ship with the required gcc support. I have moved this to Ubuntu Focal, which means that after you build the docker image, you must compile/manually install libdb4.8. See instruction in [Unix Build Notes](https://github.com/bitcoin/bitcoin/blob/master/doc/build-unix.md). 
+I have only updated the docker portion of the project. The original project used a Ubuntu Xenial image, but the build failed for the current bitcoin core release because xenial does not ship with the required gcc support. I have moved this to Ubuntu Focal, which means that after you build the docker image, you must compile/manually install libdb4.8. See instruction in [Unix Build Notes](https://github.com/bitcoin/bitcoin/blob/master/doc/build-unix.md). I'll eventually work this into the build process, still learning. 
 
 
 [Bitcoin] Development Environment
@@ -16,10 +16,10 @@ Quick start guides
 Using Docker
 
 - [How to compile Bitcoin Core for Ubuntu](http://daniel-lima.github.io/bitcoin-devenv/docker/how-to/compile-bitcoin-core-for-ubuntu);
-- [How to compile Bitcoin Core for Windows](http://daniel-lima.github.io/bitcoin-devenv/docker/how-to/compile-bitcoin-core-for-windows);
+- [How to compile Bitcoin Core for Windows](http://daniel-lima.github.io/bitcoin-devenv/docker/how-to/compile-bitcoin-core-for-windows); (Not Tested!)
 - [How to...](http://daniel-lima.github.io/bitcoin-devenv/docker)
 
-Using Vagrant
+Using Vagrant (Not Tested!)
 
 - [How to compile Bitcoin Core for Ubuntu](http://daniel-lima.github.io/bitcoin-devenv/vagrant/how-to/compile-bitcoin-core-for-ubuntu);
 - [How to compile Bitcoin Core for Windows](http://daniel-lima.github.io/bitcoin-devenv/vagrant/how-to/compile-bitcoin-core-for-windows);
