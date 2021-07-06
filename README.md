@@ -1,3 +1,7 @@
+[Update]
+I have only updated the docker portion of the project. The original project used a Ubuntu Xenial image, but the build failed for the current bitcoin core release because xenial does not ship with the required gcc support. I have moved this to Ubuntu Focal, which means that after you build the docker image, you must compile/manually install libdb4.8. See instruction in [Unix Build Notes](https://github.com/bitcoin/bitcoin/blob/master/doc/build-unix.md). 
+
+
 [Bitcoin] Development Environment
 ========
 
