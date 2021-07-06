@@ -8,14 +8,18 @@ bitcoin_ubuntu() {
     ## https://github.com/bitcoin/bitcoin/blob/master/doc/build-unix.md
     
     # boost
-    apt-get -y install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
+    #apt-get -y install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
+    apt-get -y install libevent-dev libboost-dev libboost-system-dev libboost-filesystem-dev libboost-test-dev
     
     # db4.8 (wallet compatibility)
     apt-get -y install software-properties-common
-    add-apt-repository -y ppa:bitcoin/bitcoin
+    
+    # This repo is no longer maintained and is used for libdb4.8
+    #add-apt-repository -y ppa:bitcoin/bitcoin
     apt-get -y update    
     
-    apt-get -y install libdb4.8-dev libdb4.8++-dev   
+    # These can no longer be installed since the ppa above does not have an ubuntu focal distro. Will build later. 
+    # apt-get -y install libdb4.8-dev libdb4.8++-dev   
     
     # optional
     apt-get -y install libminiupnpc-dev
