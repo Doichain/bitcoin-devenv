@@ -9,10 +9,10 @@ bitcoin_windows() {
     
     # Windows cross-compilation        
     apt-get -y install curl
+    apt-get -y install g++-mingw-w64-x86-64-posix
+    #apt-get -y install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
     
-    apt-get -y install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
-    
-    apt-get -y install g++-mingw-w64-i686 mingw-w64-i686-dev
+    #apt-get -y install g++-mingw-w64-i686 mingw-w64-i686-dev
 }
 
 _run $*

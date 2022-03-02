@@ -6,7 +6,7 @@ services:
         context: ./
         dockerfile: Dockerfile._base
         args:
-                - base_image=ubuntu:14.04
+                - base_image=ubuntu:21.04
                 - base_dir=/docker
     image: base_trusty
 
